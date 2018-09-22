@@ -11,16 +11,18 @@
 <div class="well">
     <div>Aktualny czas: @ViewBag.CurrentTime</div>
 
-    @Model.City
-
-    @{ 
+    @{
         var list = new List<string> { "string 1", "string 2" };
 
-        foreach(var item in list)
+        foreach (var item in list)
         {
             <div>@item</div>
         }
 
         @:To jest podsumowanie
     }
+
+    <div>City: @Model.CityName</div>
+    <div>Street: @Model.StreetName</div>
+    <div>Building number: @Model.BuildingNumber</div>
 </div>

@@ -7,6 +7,8 @@ namespace HelloWorld.Models
 {
     public class Address
     {
-        public string City { get; set; }
+        public string CityName { get; set; }
+        public string StreetName { get; set; }
+        public int BuildingNumber { get; set; }
     }
 }

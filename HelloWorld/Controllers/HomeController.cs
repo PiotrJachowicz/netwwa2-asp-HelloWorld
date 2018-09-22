@@ -16,7 +16,9 @@ namespace HelloWorld.Controllers
 
             var address = new Address
             {
-                City = "Warsaw"
+                CityName = "Warsaw",
+                StreetName = "Kopernika",
+                BuildingNumber = 30
             };
 
             return View(address);
