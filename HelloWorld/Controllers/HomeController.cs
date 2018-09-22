@@ -12,7 +12,14 @@ namespace HelloWorld.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            ViewBag.CurrentTime = DateTime.Now.ToShortTimeString();
+
+            var address = new Address
+            {
+                City = "Warsaw"
+            };
+
+            return View(address);
         }
 
         public IActionResult About()
